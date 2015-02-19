@@ -13,6 +13,10 @@ class StockShipmentMovesRelateTestCase(unittest.TestCase):
     def setUp(self):
         trytond.tests.test_tryton.install_module('stock_shipment_moves_relate')
 
+    def test0005views(self):
+        'Test views'
+        test_view('stock_shipment_moves_relate')
+
     def test0006depends(self):
         'Test depends'
         test_depends()
