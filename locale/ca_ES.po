@@ -1,0 +1,23 @@
+# 
+msgid ""
+msgstr "Content-Type: text/plain; charset=utf-8\n"
+
+msgctxt "model:ir.action,name:act_shipment_in_moves_form"
+msgid "Moves"
+msgstr "Moviments"
+
+msgctxt "model:ir.action,name:act_shipment_in_return_moves_form"
+msgid "Moves"
+msgstr "Moviments"
+
+msgctxt "model:ir.action,name:act_shipment_internal_moves_form"
+msgid "Moves"
+msgstr "Moviments"
+
+msgctxt "model:ir.action,name:act_shipment_out_moves_form"
+msgid "Moves"
+msgstr "Moviments"
+
+msgctxt "model:ir.action,name:act_shipment_out_return_moves_form"
+msgid "Moves"
+msgstr "Moviments"
