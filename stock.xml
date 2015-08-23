@@ -7,7 +7,9 @@ The COPYRIGHT file at the top level of this repository contains the full copyrig
         <record model="ir.action.act_window" id="act_shipment_in_moves_form">
             <field name="name">Moves</field>
             <field name="res_model">stock.move</field>
-            <field name="domain">[('shipment', '=', ('stock.shipment.in', Eval('active_id'))), ('from_location.type', '=', 'supplier')]</field>
+            <field name="domain"
+                eval="[('shipment', '=', ('stock.shipment.in', Eval('active_id'))), ('from_location.type', '=', 'supplier')]"
+                pyson="1"/>
         </record>
         <record model="ir.action.keyword" id="act_open_shipment_in_moves_keyword1">
             <field name="keyword">form_relate</field>
@@ -19,7 +21,9 @@ The COPYRIGHT file at the top level of this repository contains the full copyrig
         <record model="ir.action.act_window" id="act_shipment_in_return_moves_form">
             <field name="name">Moves</field>
             <field name="res_model">stock.move</field>
-            <field name="domain">[('shipment', '=', ('stock.shipment.in.return', Eval('active_id'))), ('to_location.type', '=', 'supplier')]</field>
+            <field name="domain"
+                eval="[('shipment', '=', ('stock.shipment.in.return', Eval('active_id'))), ('to_location.type', '=', 'supplier')]"
+                pyson="1"/>
         </record>
         <record model="ir.action.keyword" id="act_open_shipment_in_return_moves_keyword1">
             <field name="keyword">form_relate</field>
@@ -31,7 +35,9 @@ The COPYRIGHT file at the top level of this repository contains the full copyrig
         <record model="ir.action.act_window" id="act_shipment_out_moves_form">
             <field name="name">Moves</field>
             <field name="res_model">stock.move</field>
-            <field name="domain">[('shipment', '=', ('stock.shipment.out', Eval('active_id'))), ('to_location.type', '=', 'customer')]</field>
+            <field name="domain"
+                eval="[('shipment', '=', ('stock.shipment.out', Eval('active_id'))), ('to_location.type', '=', 'customer')]"
+                pyson="1"/>
         </record>
         <record model="ir.action.keyword" id="act_open_shipment_out_moves_keyword1">
             <field name="keyword">form_relate</field>
@@ -43,7 +49,9 @@ The COPYRIGHT file at the top level of this repository contains the full copyrig
         <record model="ir.action.act_window" id="act_shipment_out_return_moves_form">
             <field name="name">Moves</field>
             <field name="res_model">stock.move</field>
-            <field name="domain">[('shipment', '=', ('stock.shipment.out.return', Eval('active_id'))), ('from_location.type', '=', 'customer')]</field>
+            <field name="domain"
+                eval="[('shipment', '=', ('stock.shipment.out.return', Eval('active_id'))), ('from_location.type', '=', 'customer')]"
+                pyson="1"/>
         </record>
         <record model="ir.action.keyword" id="act_open_shipment_out_return_moves_keyword1">
             <field name="keyword">form_relate</field>
@@ -55,7 +63,9 @@ The COPYRIGHT file at the top level of this repository contains the full copyrig
         <record model="ir.action.act_window" id="act_shipment_internal_moves_form">
             <field name="name">Moves</field>
             <field name="res_model">stock.move</field>
-            <field name="domain">[('shipment', '=', ('stock.shipment.internal', Eval('active_id'))), ('from_location.type', 'in', ['storage', 'lost_found'])]</field>
+            <field name="domain"
+                eval="[('shipment', '=', ('stock.shipment.internal', Eval('active_id'))), ('from_location.type', 'in', ['storage', 'lost_found'])]"
+                pyson="1"/>
         </record>
         <record model="ir.action.keyword" id="act_open_shipment_internal_moves_keyword1">
             <field name="keyword">form_relate</field>
